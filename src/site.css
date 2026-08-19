@@ -1,0 +1,153 @@
+/* Original site styles from the GitHub repo, kept as-is (scoped to the ported pages). */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 21;
+  margin-bottom: 10px;
+}
+
+.hamburger {
+  margin-left: 10px;
+}
+
+.header img {
+  width: 40px;
+  height: auto;
+}
+
+.name {
+  font-family: "Geist Pixel", monospace;
+  font-size: 30px;
+  color: white;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: fixed;
+  align-items: center;
+  margin-top: 44px;
+  background-color: rgb(0, 0, 0);
+  width: 90px;
+  height: 100vh;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}
+
+.sidebar button {
+  font-family: "Geist Pixel", monospace;
+  font-size: 15px;
+  background-color: rgb(0, 0, 0);
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.content,
+.contents {
+  background-color: rgb(255, 255, 255);
+  margin-top: 50px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* main page */
+.purpose {
+  font-family: "Geist Pixel", monospace;
+  font-size: 20px;
+}
+
+.loud {
+  font-family: "Geist Pixel", monospace;
+  font-size: 50px;
+}
+
+.yap {
+  font-family: "Geist Pixel", monospace;
+  font-size: 20px;
+}
+
+.lookround {
+  font-family: "Geist Pixel", monospace;
+  font-size: 50px;
+  margin-top: 140px;
+}
+
+/* about me */
+.name2 {
+  font-family: "Geist Pixel", monospace;
+  font-size: 50px;
+}
+
+.info,
+.ender {
+  font-family: "Geist Pixel", monospace;
+  font-size: 30px;
+}
+
+/* contacts */
+.wannahmu {
+  color: black;
+  background-color: white;
+  font-family: "Geist Pixel", monospace;
+  font-size: 50px;
+}
+
+.deets {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 90px;
+}
+
+.deets p {
+  font-family: "Geist Pixel", monospace;
+  font-size: 30px;
+}
+
+/* favs */
+.toptext {
+  font-family: "Geist Pixel", monospace;
+  font-size: 40px;
+}
+
+.photogrid {
+  display: grid;
+  grid-template-rows: auto auto;
+  border-color: rgb(255, 255, 255);
+  height: auto;
+  overflow: hidden;
+}
+
+.charachters {
+  display: flex;
+  flex-direction: column;
+  font-family: "Geist Pixel", monospace;
+  font-size: 30px;
+}
+
+.charachters img {
+  width: 200px;
+  height: auto;
+}
+
+.end {
+  font-family: "Geist Pixel", monospace;
+  font-size: 50px;
+  margin-left: 50px;
+  display: flex;
+}

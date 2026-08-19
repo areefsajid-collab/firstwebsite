@@ -1,0 +1,28 @@
+.content{
+    background-color: rgb(255, 255, 255);
+    margin-top:50px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+ align-items: center
+    }
+.purpose{
+    font-family: geist pixel;
+    font-size: 20px;
+}
+.loud{
+    font-family: geist pixel;
+    font-size: 50px;
+}
+
+
+.yap{
+    font-family: geist pixel;
+    font-size:20px;
+}
+
+.lookround{
+    font-family: geist pixel;
+    font-size: 50px;
+    margin-top: 140px;
+}
