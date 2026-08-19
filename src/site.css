@@ -34,13 +34,15 @@
   gap: 50px;
   position: fixed;
   align-items: center;
-  margin-top: 44px;
   background-color: rgb(0, 0, 0);
   width: 90px;
   height: 100vh;
   z-index: 20;
   top: 0;
   left: 0;
+  padding-top: 110px;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .sidebar button {
@@ -57,7 +59,7 @@
 .content,
 .contents {
   background-color: rgb(255, 255, 255);
-  margin-top: 50px;
+  margin-top: 110px;
   margin-left: 150px;
   display: flex;
   flex-direction: column;
