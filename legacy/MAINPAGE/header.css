@@ -1,0 +1,31 @@
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(0, 0, 0);
+top:0;
+position:fixed;
+right:0;
+left:0;
+z-index: 21;
+margin-bottom: 10px;
+}
+
+.socials{
+  
+}
+
+
+.hamburger{
+margin-left: 10px;
+}
+.header img{
+    width: 40px;
+    height: auto;
+
+}
+.name{
+    font-family: geist pixel;
+    font-size: 30px;
+    color:white;
+}

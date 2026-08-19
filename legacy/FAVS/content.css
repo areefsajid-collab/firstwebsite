@@ -1,0 +1,55 @@
+.content{
+     background-color: rgb(255, 255, 255);
+    margin-top:50px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+ align-items: center;
+ gap:30px;
+  
+}
+.name2{
+   font-family: geist pixel;
+   font-size: 50px;
+}
+.info{
+   font-family: geist pixel;
+   font-size: 30px;
+}
+.ender{
+    font-family: geist pixel;
+   font-size: 30px;
+}
+.toptext{
+   font-family: geist pixel;
+   font-size: 40px;
+}
+.content{
+   display: flex;
+   align-items: center;
+}
+   
+.photogrid{
+   display: grid;
+   grid-template-rows: auto auto;
+   border-color: rgb(255, 255, 255);
+   height: auto;
+   overflow: hidden;
+}
+.charachters{
+   display: flex;
+   flex-direction: column;
+   font-family: geist pixel;
+   font-size: 30px;
+}
+.charachters img{
+   width: 200px;
+   height: auto;
+}
+
+.end{
+   font-family: geist pixel;
+   font-size: 50px;
+   margin-left: 50px;
+   display: flex;
+}
