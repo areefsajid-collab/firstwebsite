@@ -66,10 +66,8 @@ function Favs() {
             {favourites.map((fav) => (
               <div key={fav.name}>
                 <img src={fav.img} alt={fav.name} />
-                <p>
-                  Name: {fav.name}
-                  <p>{fav.text}</p>
-                </p>
+                <p>Name: {fav.name}</p>
+                <p>{fav.text}</p>
               </div>
             ))}
           </div>
