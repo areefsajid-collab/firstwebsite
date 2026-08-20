@@ -14,8 +14,57 @@
 }
 
 .hamburger {
-  margin-left: 10px;
+  margin-left: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+.hamburger:hover {
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(255, 255, 255, 0.2);
+}
+
+.hamburger:active {
+  transform: translateY(0) scale(0.94);
+}
+
+.ham-bar {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.24s ease, background-color 0.3s ease;
+}
+
+.hamburger:hover .ham-bar {
+  background: rgb(0, 0, 0);
+}
+
+.hamburger.is-open .ham-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.is-open .ham-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0.2);
+}
+
+.hamburger.is-open .ham-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 
 .header img {
   width: 40px;
@@ -266,4 +315,52 @@
   font-size: 50px;
   margin-left: 50px;
   display: flex;
+}
+
+/* sidebar toggle */
+.sidebar {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
+  will-change: transform;
+}
+
+.sidebar-closed .sidebar {
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar .nav-item {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
+}
+
+.sidebar-closed .sidebar .nav-item {
+  transform: translateX(-24px);
+  opacity: 0;
+}
+
+.sidebar-open .sidebar .nav-item:nth-child(1) { transition-delay: 0.06s; }
+.sidebar-open .sidebar .nav-item:nth-child(2) { transition-delay: 0.12s; }
+.sidebar-open .sidebar .nav-item:nth-child(3) { transition-delay: 0.18s; }
+.sidebar-open .sidebar .nav-item:nth-child(4) { transition-delay: 0.24s; }
+
+.shell .content,
+.shell .contents {
+  transition: margin-left 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sidebar-closed .content,
+.sidebar-closed .contents {
+  margin-left: 40px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar,
+  .sidebar .nav-item,
+  .ham-bar,
+  .shell .content,
+  .shell .contents {
+    transition-duration: 0.01ms;
+  }
 }
